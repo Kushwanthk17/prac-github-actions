@@ -1,0 +1,13 @@
+name: pr-prac
+on: 
+  pull_request:
+   branches: 
+     - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build
+        run: echo "build"
+        
+     
