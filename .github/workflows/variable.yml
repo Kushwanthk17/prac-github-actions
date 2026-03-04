@@ -5,4 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: prac-var
-        run: echo hello, $name
+        run: echo hello, "${{vars.name}}"
+              echo hello, "${{secrets.pass}}"
