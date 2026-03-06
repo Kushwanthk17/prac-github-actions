@@ -6,10 +6,14 @@ on:
           description: to give env value
           required: true
           default: dev
+      tags:
+          description: tag app version
+          required: true
+          default: 1.0.0
 jobs:
   input-job:
     runs-on: ubuntu-latest
     steps:
       - name: input demo
-        run: echo "deploy application to ${{inputs.environment-demo}}"
+        run: echo "deploy the application version ${{inputs.tags}} to ${{inputs.environment-demo}}"
       
