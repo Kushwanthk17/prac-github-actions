@@ -6,6 +6,11 @@ on:
           description: to give env value
           required: true
           default: dev
+          type: choice
+          options:
+            - qa
+            - prod
+            - test
       tags:
           description: tag app version
           required: true
